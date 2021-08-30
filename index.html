@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+        <link rel="stylesheet" href="CSS/style.css"><!--link to css file-->
+
+        <!--links for the fonts used in site-->
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+
+        <!--link of page icon-->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/icon.png">
+
+        <title>Book Man</title>
+    </head>
+
+    <body>
+        <header>
+            <figure id="logo">
+                <span class="logo-name">Book Man</span>
+                <img class="logo-img" src="images/logo.ico" alt="book man">
+            </figure>
+            <ul class="nav-componant">
+                <li>
+                    <details>
+                       <summary>Browse</summary>
+                    </details>
+                </li>
+                <li>
+                    <details>
+                        <summary>More</summary>
+                     </details>
+                </li>
+            </ul>
+            <form action="search" class="search" method="GET">
+                <input type="text" name="s" placeholder="Searh" id="search-a" required>
+                <input type="submit" id="search-b" value>
+            </form>
+            <ul class="sign">
+                <li><button id="log-in">Log In</button></li>
+                <li><button id="sig-up">Sign Up</button></li>
+            </ul>
+        </header>
+        <div class="container">
+            <aside class="read-option">
+                <img class="book-photo" src="images/book.jpg" alt="Game Of Thrones">
+                <div class="group-button">
+                    <button class="borrow">Borrow</button>
+                    <button class="lsn">
+                        <div class="head-set"></div>
+                        <div class="text">&nbsp;Listen</div> 
+                    </button>
+                </div>
+                <button class="preview-search-button">Preview</button>
+                <button class="preview-search-button">Search Inside</button>
+                <button id="down-putton" class="preview-search-button">Download&nbsp;&nbsp;<div class="img"></div></button>
+            </aside>
+            <div class="content">
+                <div class="title">
+                    <h1>A Game of Thrones<br></h1>
+                    <p><em>Book One of A Song of Ice and Fire</em></p>
+                    <div class="span"><em>paperback edition (27)</em><br> <br> <br> by &nbsp;<a href="#" style="color: rgba(127, 255, 212, 0.719);" >by George R.R. Martin</a><br><br></div>
+                </div>
+                <ul>
+                    <li style="list-style: none;">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span>&nbsp;4.39</span>
+                    </li>
+                    <li>28 Ratings</li>
+                    <li> 53 Want to read</li>
+                    <li>3 Currently reading</li>
+                    <li>31 Have read</li>
+                </ul>
+                <div class="hint">
+                    <hr>
+                    <p>This edition was published in <strong> 2012 </strong>by Harper Voyager in London.<strong>Written in English— 801 pages</strong>
+                    </p>
+                    <hr>
+                </div> 
+                <div class="discribe">
+                    <h2 class="book-describe">Book Describtion</h2>
+                    <p>
+                        A Game of Thrones is the first novel in A Song of Ice and Fire,
+                        a series of fantasy novels by the American author George R. R. Martin.
+                        It was first published on August 1, 1996. The novel won the 1997 Locus Award and was nominated for both the 1997 Nebula Award and the 1997 World Fantasy Award. 
+                        The novella Blood of the Dragon, comprising the Daenerys Targaryen chapters from the novel,
+                        won the 1997 Hugo Award for Best Novella. In January 2011, the novel became a New York Times Bestseller and reached No. 
+                        1 on the list in July 2011.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="copyright">
+                Copy right &copy 2021   All Rights Reserved for Live Football's team &reg ----made by ibrahim ahmed elian
+            </div>
+            <div class="conect-me">
+                <ul style="list-style: none;">
+                    <li><p>Conect Me :</p></li>
+                    <li><a href="mailto: ibrahim11elian@gmail.com" target="_blank"><img class="social" src="images/email.png" alt="email"></a></li>
+                    <li><a href="https://github.com/ibrahim11elian" target="_blank"><img class="social" src="images/github.png" alt="github"></a></li>
+                    <li><a href="https://www.linkedin.com/in/ibrahim-ahmed-a8bba9196/" target="_blank"><img class="social" src="images/linkedin.png" alt="linkedin"></a></li>
+                    <li><a href="https://www.facebook.com/ibrahim11ahmed/" target="_blank"><img class="social" src="images/facebook.png" alt="facebook"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>  
+</html>
