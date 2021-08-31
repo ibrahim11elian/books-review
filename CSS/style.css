@@ -2,26 +2,28 @@
 body{
     background-color: 	hsl(233, 47%, 7%);
     display: grid;
-    grid-template-rows: 100px 600px 60px;
+    grid-template-rows: 100px auto 60px;
     grid-template-areas: "header" "body" "footer";
     width: 80%;
-    margin: 20px 10% 20px 10%;
+    height: auto;
+    margin: 10px 10% 20px 10%;
     font-size: 15px;
     font-family: sans-serif;
 }
 header{
     grid-area: "header";
-    width: 100%;
+    width: auto;
     background-color: inherit;
     display: flex;
     flex-direction: row;
 
 }
 header #logo{
-    width: 20%;
+    width: 25%;
     display: flex;
     flex-direction: row-reverse;
-    margin: 10px 5px 10px 5px;
+    padding: 1%;
+    margin: 0;
     justify-content: center;
     align-items: center;
 }
@@ -32,6 +34,7 @@ header #logo{
     color: rgba(167, 209, 186, 0.89);
     line-height: 0.95;
     cursor: pointer;
+    width: 69%;
 }
 .logo-name:hover{
     color: rgba(110, 139, 123, 0.89);
@@ -41,22 +44,24 @@ header #logo{
     transition: color 1s ease-out;
 }
 .logo-img{
-    width: 35%;
+    width: 30%;
     height: 100%;
     cursor: pointer;
 }
 .logo-img:hover{
-    width: 37%;
+    width: 33%;
     height: 102%;
 }
 .nav-componant{
     display: flex;
     flex-direction: row;
     width: 20%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    margin-left: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0%;
 }
 details{
     font-size: 20px;
@@ -69,7 +74,7 @@ details{
     width: 30%;
     flex-direction: row;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 1%;
 }
 #search-a{
     height: 30px;
@@ -107,7 +112,6 @@ details{
     align-items: center;
     justify-content: center;
     list-style: none;
-    margin-right: 1%;
 }
 #log-in{
     background-color: inherit;
@@ -137,7 +141,7 @@ details{
 }
 .container{
     grid-area: "body";
-    width: 100%;
+    width: auto;
     background-color: hsl(232, 48%, 13%);
     border-radius: 10px;
     display: flex;
@@ -174,7 +178,7 @@ details{
     overflow: hidden;
 }
 .borrow{
-    width: 200px;
+    width: 75%;
     background-color: #0376b8;
     border: none;
     border-bottom-left-radius: 8px;
@@ -190,7 +194,7 @@ details{
     background-color: #003757;
 }
 .lsn{
-    width: 50px;
+    width: 55px;
     background-color: #0376b8;
     border: none;
     border-left: 3px solid white;
@@ -209,7 +213,7 @@ details{
     padding-left: 0;
 }
 .head-set{
-    margin-top: 3px;
+    margin-top: 2.5px;
     width: 35px;
     height: 35px;
     background-image: url(../images/head.png);
@@ -225,7 +229,7 @@ details{
 }
 .lsn:hover{
     background-color: #003757;
-    width: 170px;
+    width: 90%;
 }
 .preview-search-button{
     background-color: inherit;
@@ -307,7 +311,7 @@ details{
 }
 .discribe{
     margin-top: 10px;
-    height: 80%;
+    height: auto;
 }
 .discribe p{
     font-size: 20px;
@@ -354,8 +358,9 @@ footer .conect-me ul{
 
 @media only screen and (max-device-width: 400px){
     body{
-        grid-template-rows: 50px 910px 100px;
+        grid-template-rows: 50px auto 100px;
         width: 90%;
+        height: auto;
         margin: 10px 5% 10px 5%;
         font-size: 10px;
     }
@@ -384,19 +389,19 @@ footer .conect-me ul{
         margin-left: 1%;
     }
     #search-a{
-        height: 20px;
+        height: 15px;
         width: 80%;
         font-size: 7.5px;
         border: none;
         padding-left: 2px;
     }
     #search-b{
-        height: 24px;
+        height: 18.5px;
         width: 25px;
         background-color: rgba(0, 255, 255, 0.842);
         background-image: url(../images/search-icon-mob.png);
-        background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: no-repeat;
     }
     .sign{
         width: 30%;
@@ -412,16 +417,16 @@ footer .conect-me ul{
         height: 17px;
     }
     .container{
-        width: 95%;
+        width: auto;
         background-color: hsl(232, 48%, 13%);
         border-radius: 10px;
         padding: 3%;
         display: inline;
     }
     .read-option{
-        margin-left: 25%;
-        width: 150px;
-        height: 250px;
+        margin-left: 16%;
+        width: 200px;
+        height: 300px;
         padding: 1.5%;
         flex-direction: column;
         justify-content: space-between;
@@ -434,28 +439,29 @@ footer .conect-me ul{
         width: 97%;
     }
     .borrow{
-        width: 115px;
+        width: 90%;
         border-bottom-left-radius: 4px;
         border-top-left-radius: 4px;
-        font-size: 10px;
-        height: 20px;
+        font-size: 13px;
+        height: 25px;
     }
     .lsn{
-        width: 28px;
+        width: 32px;
         border-bottom-right-radius: 4px;
         border-top-right-radius: 4px;
         font-size: 7px;
-        height: 20px;
+        height: 25px;
         padding-right: 2px;
     }
     .head-set{
-        margin-top: 1px;
-        width: 17.5px;
-        height: 17.5px;
+        margin-top: 2.5px;
+        width: 19px;
+        height: 19px;
     }
     .lsn .text{
         margin-top: 3.5px;
         margin-right: 2.5px;
+        font-size: 13px;
     }
     .lsn:hover{
         background-color: #003757;
@@ -463,8 +469,8 @@ footer .conect-me ul{
         padding-right: 4px;
     }
     .preview-search-button{
-        height: 20px;
-        font-size: 10px;
+        height: 25px;
+        font-size: 13px;
     }
     #down-putton:hover{
         background-color: rgba(0, 77, 0, 0.904);
@@ -478,7 +484,7 @@ footer .conect-me ul{
         display:inline;
     }
     .content .title h1{
-        font-size: 25px;
+        font-size: 27px;
     }
     .content .title{
         width: 100%;
@@ -503,7 +509,7 @@ footer .conect-me ul{
     .discribe{
         width: 100%;
         margin-top: 10px;
-        height: 80%;
+        height: auto;
     }
     .discribe p{
         font-size: 15px;
